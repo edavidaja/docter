@@ -1,14 +1,11 @@
 <aside>
-  <p class="intro">{{ .Site.subtitle }}</p>
+  <p class="intro">{{ .Params.subtitle }}</p>
   <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
   <nav class="sidebar-nav" role="navigation">
     <ul>
-      {{ range link in site.navigation }}
-        {{ if link.internal == true }}
-          <li><a href="{{ .Site.baseurl }}/{{ link.url }}">{{ link.text }}</a></li>
-        {{ else }}
-          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
-        {{ end }}
+      {{ $section := where $.Site.RegularPages "Section" "docpage"}}
+      {{ range $section }}
+          <li><a href="{{ .Page.Permalink }}">{{ .Params.slug }}</a></li>
       {{ end }}
     </ul>
   </nav>
