@@ -1,0 +1,18 @@
+{{define "main" }}
+
+{{ .Content }}
+
+<div id="home">
+  <h2>Posts</h2>
+  <ul class="posts">
+    {{ $section := where $.Site.RegularPages "Section" "blogpost"}}
+    {{ range $section }}
+      <li>
+        <a href="{{ .Page.Permalink }}">{{ .Title }}</a>
+        <span class="post-date">{{ .Date | dateFormat "Jan 2, 2006" }}</span>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+
+{{ end }}

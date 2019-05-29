@@ -1,7 +1,24 @@
 <footer role="contentinfo">
   <div class="wrap">
-    <p>This project is maintained by <a href="{{ .Site.Params.author_url}}">{{ .Site.Params.author }}</a>.</p>
+    <p>
+      This project is maintained by
+      <a href="{{ .Site.Params.author_url}}">{{ .Site.Params.author }}</a
+      >.
+    </p>
 
-    <p>Hosted on <a href="{{ .Site.Params.hosted_on_url }}">{{.Site.Params.hosted_on}}</a>.</p>
-  </div><!--/.wrap -->
+    <p>
+      Hosted on
+      <a href="{{ .Site.Params.hosted_on_url }}">{{.Site.Params.hosted_on}}</a
+      >.
+    </p>
+
+    <p>
+      <a href="{{ .Site.Params.repo }}/edit/master/content/{{.File.Path}}"
+        >Edit this page</a
+      >
+      or <a href="{{.Site.Params.repo}}/issues">file an issue</a> on
+      {{.Site.Params.repo_host}}.
+    </p>
+  </div>
+  <!--/.wrap -->
 </footer>
