@@ -3,9 +3,9 @@
   <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
   <nav class="sidebar-nav" role="navigation">
     <ul>
-      {{ $section := where $.Site.RegularPages "Section" "docpage"}}
+      {{ $section := where $.Site.RegularPages "Section" "page"}}
       {{ range $section }}
-          <li><a href="{{ .Page.Permalink }}">{{ .Params.slug | humanize }}</a></li>
+          <li><a href="{{ .Page.Permalink }}">{{ .Title | title }}</a></li>
       {{ end }}
     </ul>
   </nav>

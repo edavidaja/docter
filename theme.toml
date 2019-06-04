@@ -6,8 +6,8 @@ license = "MIT"
 licenselink = "https://github.com/edavidaja/hugo-docter/blob/master/LICENSE"
 description = "cfpb docter for hugo"
 homepage = "http://example.com/"
-tags = ["documentation"]
-features = []
+tags = ["documentation", "blog"]
+features = ["blog"]
 min_version = "0.41"
 
 [author]
