@@ -1,0 +1,17 @@
+baseURL = "https://example.com"
+disablePathToLower = true
+languageCode = "en-us"
+title = "docter"
+theme = "docter"
+
+[params]
+  name = "Dr. Hugo"
+  author="applied research & methods"
+  author_url="gohugo.io"
+  repo_host = "Gitlab"
+  repo = "https://gitlab.com/edavidaja/docter"
+  logourl=""
+  logoalt=""
+  hosted_on="netlify"
+  hosted_on_url="https://www.netlify.com"
+  

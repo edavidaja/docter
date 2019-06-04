@@ -21,8 +21,4 @@ The sidebar will be built automatically from the content in `page`. You can use 
 
 ### posts
 
-You can create blog posts in post `post`.
-
-## License
-
-released under the MIT license
+You can create blog posts in `post`.

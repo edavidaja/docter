@@ -1,12 +1,10 @@
-{{define "main" }}
-
-{{ .Content }}
+{{ define "main" }}
 
 <div id="home">
   <h2>Posts</h2>
   <ul class="posts">
     {{ $section := where $.Site.RegularPages "Section" "post"}}
-    {{ range first 5 $section }}
+    {{ range $section }}
       <li>
         <a href="{{ .Page.Permalink }}">{{ .Title }}</a>
         <span class="post-date">{{ .Date | dateFormat "Jan 2, 2006" }}</span>
@@ -15,4 +13,4 @@
   </ul>
 </div>
 
-{{ end }}
+{{end}}
