@@ -1,7 +1,7 @@
 <header role="banner">
   <div class="wrap">
     {{ if isset .Site.Params "logourl" }}
-      <img class="logo" src="{{ .Site.Params.logourl }}" alt="{{ .Site.Params.logoalt }}">
+      <img class="logo" src="{{.Site.BaseURL}}{{ .Site.Params.logourl }}" alt="{{ .Site.Params.logoalt }}">
     {{ end }}
     <h1 class="site-title"><a class="title-link" href="{{ .Site.BaseURL }}">{{ .Site.Params.name }}</a></h1>
   </div>
