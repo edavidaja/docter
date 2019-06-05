@@ -8,12 +8,10 @@ from the root of your hugo site, run:
 
 ```
 cd themes
-git clone https://gitlab.com/edavidaja/docter
+git clone https://gitlab.com/edavidaja/docter.git
 ```
 
 ## getting started
-
-### config
 
 ### pages
 
@@ -21,4 +19,4 @@ The sidebar will be built automatically from the content in `page`. You can use 
 
 ### posts
 
-You can create blog posts in `post`.
+You can create blog posts in `post`. The most recent five by date will be displayed on the home page.
