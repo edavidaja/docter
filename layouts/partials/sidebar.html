@@ -1,5 +1,7 @@
 <aside>
-  <p class="intro">{{ .Params.subtitle }}</p>
+  {{ if isset .Site.Params "subtitle"}}
+  <p class="intro">{{ .Site.Params.subtitle }}</p>
+  {{ end }}
   <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
   <nav class="sidebar-nav" role="navigation">
     <ul>
