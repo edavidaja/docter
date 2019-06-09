@@ -5,7 +5,7 @@ variables:
 
 test:
   script:
-  - hugo
+  - hugo -b "https://edavidaja.gitlab.io/docter" -c "exampleSite/content" --config "exampleSite/config.toml" -t "docter" --themesDir ./..
   except:
   - master
 
