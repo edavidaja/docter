@@ -5,13 +5,13 @@ variables:
 
 test:
   script:
-  - hugo -b "https://edavidaja.gitlab.io/docter" -c "exampleSite/content" --config "exampleSite/config.toml" -t "docter" --themesDir ./..
+  - hugo -b "https://edavidaja.gitlab.io/docter/" -c "exampleSite/content" --config "exampleSite/config.toml" -t "docter" --themesDir ./..
   except:
   - master
 
 pages:
   script:
-  - hugo -b "https://edavidaja.gitlab.io/docter" -c "exampleSite/content" --config "exampleSite/config.toml" -t "docter" --themesDir ./.. 
+  - hugo -b "https://edavidaja.gitlab.io/docter/" -c "exampleSite/content" --config "exampleSite/config.toml" -t "docter" --themesDir ./.. 
   artifacts:
     paths:
     - public
