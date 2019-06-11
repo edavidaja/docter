@@ -8,15 +8,11 @@
 
     <p>
       Hosted on
-      <a href="{{ .Site.Params.hosted_on_url }}">{{.Site.Params.hosted_on}}</a
-      >.
+      <a href="{{ .Site.Params.hosted_on_url }}">{{.Site.Params.hosted_on}}</a>.
     </p>
-
     <p>
-      <a
-        href="{{ .Site.Params.repo }}/edit/master/content/
-        {{ with.File }}{{ .Path }}{{ end }}"
-        >Edit this page</a> or <a href="{{.Site.Params.repo}}/issues">
+      <a href="{{ .Site.Params.repo }}/edit/master/content/{{ with.File }}{{ .Path }}{{ end }}">
+          Edit this page</a> or <a href="{{.Site.Params.repo}}/issues">
         file an issue</a> on
       {{.Site.Params.repo_host}}.
     </p>
