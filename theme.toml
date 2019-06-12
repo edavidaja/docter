@@ -4,14 +4,14 @@ name = "docter"
 license = "MIT"
 licenselink = "https://github.com/edavidaja/docter/blob/master/LICENSE"
 description = "docter for hugo"
-homepage = "http://edavidaja.gitlab.io/docter/"
+homepage = "https://edavidaja.gitlab.io/docter/"
 tags = ["documentation", "blog"]
 features = ["blog"]
 min_version = "0.41"
 
 [author]
   name = "edavidaja"
-  homepage = "edavidaja.com"
+  homepage = "https://edavidaja.com"
 
 # If porting an existing theme
 [original]
