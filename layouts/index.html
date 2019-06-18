@@ -5,7 +5,7 @@
 <div id="home">
   <h2>Posts</h2>
   <ul class="posts">
-    {{ $section := where $.Site.RegularPages "Section" "post"}}
+    {{ $section := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ range first 5 $section }}
       <li>
         <a href="{{ .Page.Permalink }}">{{ .Title }}</a>
