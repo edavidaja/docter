@@ -20,3 +20,7 @@ The sidebar will be built automatically from the content in `page`. You can use 
 ### posts
 
 You can create blog posts in `post`. The most recent five by date will be displayed on the home page.
+
+## brand color
+
+You can set the color for the website using the `brand_color` option in `config.toml`. This requires the use of `hugo-extended`.
