@@ -172,8 +172,8 @@ Navigation
 .sidebar-nav a {
   display: block;
   padding: 10px;
-  -webkit-transition: unset;
-  transition: unset;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .sidebar-nav a,
 .sidebar-nav a:link,
@@ -181,7 +181,7 @@ Navigation
   border-bottom: none;
   color: #75787b;
 }
-.sidebar-nav li:hover,
+.sidebar-nav a:hover,
 .sidebar-nav a:focus,
 .sidebar-nav li:active,
 .sidebar-nav .sidebar-nav-active {
