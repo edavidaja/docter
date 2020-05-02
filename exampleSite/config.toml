@@ -28,3 +28,6 @@ theme = "docter"
   # main sections
   # change the main section to set the directory where the top articles are sourced
   mainSections = ["post"]
+
+  # brand color
+  # brand_color = "#7300ac"

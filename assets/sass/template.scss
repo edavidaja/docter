@@ -1,3 +1,7 @@
+$brand_color: {{ .Site.Params.brand_color | default "#0039ac" }};
+
+// main
+
 /*
 Main.css
 ==================================
@@ -168,8 +172,8 @@ Navigation
 .sidebar-nav a {
   display: block;
   padding: 10px;
-  -webkit-transition: unset;
-  transition: unset;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .sidebar-nav a,
 .sidebar-nav a:link,
@@ -177,12 +181,12 @@ Navigation
   border-bottom: none;
   color: #75787b;
 }
-.sidebar-nav li:hover,
+.sidebar-nav a:hover,
 .sidebar-nav a:focus,
 .sidebar-nav li:active,
 .sidebar-nav .sidebar-nav-active {
   color: #75787b;
-  border-left: 4px solid #0039ac;
+  border-left: 4px solid $brand_color;
   background-color: transparent;
   border-bottom: 1px solid #babbbd;
 }
@@ -246,7 +250,7 @@ section:before {
 
 header {
     width: 100%;
-    border-bottom: 4px solid #0039ac;
+    border-bottom: 4px solid $brand_color;
     background-color: #fff;
     padding: 2em 0;
 }

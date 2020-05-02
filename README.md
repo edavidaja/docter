@@ -4,6 +4,8 @@ Docter is a project documentation theme based on  [CFPB's DOCter](https://github
 
 ## installation
 
+this theme requires Hugo Extended.
+
 from the root of your hugo site, run:
 
 ```
@@ -20,3 +22,7 @@ The sidebar will be built automatically from the content in `page`. You can use 
 ### posts
 
 You can create blog posts in `post`. The most recent five by date will be displayed on the home page.
+
+## brand color
+
+You can set the color for the website using the `brand_color` option in `config.toml`.
